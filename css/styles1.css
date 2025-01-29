@@ -1,0 +1,147 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+.container1 .card{
+    position: relative;
+    height: 200px;
+    background: #FFF;
+    width: 26%;
+    margin: 20px 40px;
+
+}
+.container1 .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff6c3d;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.container1 .card .imgBx img{
+    width: 100px;
+    transition:  0.5s ease-in-out;
+}
+
+.container1 .card:hover .imgBx{
+    width: 100px;
+    height: 100px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #333;
+    margin-left: 20px;
+}
+
+.container1 .card:hover .imgBx img{
+    width: 75px;
+    transition:  0.5s ease-in-out;
+}
+
+.container1 .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+
+}
+
+.container1 .card .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #000;
+
+}
+.container1 .card .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #ff6c3d;
+    text-decoration: none;
+    color: #000;
+}
+.container1  .content:hover a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #ff6c3d;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 1150px){
+    .container1{
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+    }
+    .container1 .card{
+        width: 40%;
+    }
+}
+@media (max-width: 900px){
+    .container1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1 .card{
+        width:400px;
+    }
+}
+ 
+
+@media (max-width: 768px){
+    .container1 .card{
+        max-width:300px;
+        flex-direction: column;
+        height: auto;
+    }
+    .container1 .card .imgBx{
+        position: relative;
+        
+    }
+    .container1 .card .imgBx,
+    .container1 .card:hover .imgBx{
+        width: 100%;
+        height: 150px;
+        left: 0;
+
+
+    }
+    .container1 .card .imgBx img,
+    .container1 .card:hover .imgBx img{
+        max-width: 100px;
+    }
+    .container1 .card .content{
+        position: relative;
+        width: 100%;
+    }
+}
+.icon-pushpin:before {
+    content: "\e946";
+  }

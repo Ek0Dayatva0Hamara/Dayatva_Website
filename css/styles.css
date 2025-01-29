@@ -1,0 +1,56 @@
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%);
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    
+    background: rgba(0,0,0,0.8);
+    border-radius: 25px;
+    color: black;
+}
+h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: left;
+    border-bottom: 3px solid #ff5722;
+}
+.box .inputbox{
+    width: 100%;
+    background:transparent;
+    border-bottom:1px solid #ff5722;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+
+.box .inputbox input{
+    width: 90%;
+    padding: 0px 0;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    
+}
+.box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    pointer-events: none;
+    overflow: hidden;
+}
+.box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ff5722;
+    padding: 10px 15px;
+}
