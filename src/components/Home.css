@@ -1,0 +1,76 @@
+/* General Box Styling */
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 320px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.box:hover {
+  background: white;
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.box-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.box-icon {
+  width: 40px;
+  height: 40px;
+  color: #6b7280;
+}
+
+/* Initiative & Founder Box Styling */
+.initiative-box,
+.founder-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  padding: 24px;
+}
+
+.initiative-box .box-icon,
+.founder-box img {
+  width: 64px;
+  height: 64px;
+}
+
+.founder-box img {
+  border-radius: 50%;
+  border: 4px solid #e5e7eb;
+}
+
+/* Announcements Section */
+.announcements {
+  background: #ffffff;
+  color: rgb(0, 21, 255);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Marquee Effect */
+.announcements marquee {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}

@@ -1,0 +1,10 @@
+
+/* Footer */
+footer {
+    background-color: #e9710e;
+    color: rgb(238, 128, 17);
+    position: static;
+    width: 100%;
+    padding-top: 5 px;
+    bottom: 0;
+}

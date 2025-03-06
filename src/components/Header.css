@@ -1,0 +1,20 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; /* Ensures it stays above other elements */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+body {
+  padding-top: 80px; /* Adjust based on your header height */
+}
+
+
+
+.header a:hover {
+    color: #ff5722 !important;
+  }
+  
